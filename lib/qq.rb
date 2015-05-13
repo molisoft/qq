@@ -2,7 +2,7 @@ require 'open-uri'
 require 'net/http'
 # QQ Connect
 class Qq
-  attr_reader :openid
+  attr_reader :token,:openid,:auth
   # code = params[:code]
   # get appid & appkey from http://opensns.qq.com
   def initialize(code, red_url, appid, appkey)
